@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Autoclose issues whose title matched the specified regex
-      uses: IndyV/issue-closer@v1.0
+      uses: IndyV/IssueChecker@v1.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-close-message: "@${issue.user.login} this issue was automatically closed because it matched a spam regex"
