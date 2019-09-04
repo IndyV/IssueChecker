@@ -1,0 +1,16 @@
+name: Issue auto-closer
+description: Automatically closes issues if the title matches a specified regular expression.
+author: IndyV
+branding:
+  icon: alert-circle
+  color: red
+inputs:
+  issue-close-message:
+    description: Message content to comment on the issue before closing
+  issue-pattern:
+    description: Regular expression pattern, if the issue title matches the regex it will be closed
+  repo-token:
+    description: GitHub token
+runs:
+  using: node12
+  main: dist/index.js
