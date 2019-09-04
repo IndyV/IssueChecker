@@ -1,4 +1,4 @@
-name: Issue auto-closer
+name: Issue title checker
 description: Automatically closes issues if the title matches a specified regular expression.
 author: IndyV
 branding:
